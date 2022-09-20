@@ -1,0 +1,222 @@
+@import "vars"; 
+
+.tasksDefaultLayout{
+    display: flex;
+    flex-flow:  wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+    
+}
+
+.tasksDefaultLayout >div {
+    background-color: #FFFFFF ;
+    margin-right: 1rem;
+    border-radius: 5px;
+    padding: 1rem;
+    min-width: 300px;
+    max-width: 500px;
+    border: rgb(190, 190, 190) solid 1px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.sectionLabel{
+    font-weight: 600;
+    font-size: 18px;
+    color: #2a2a2a;
+    padding: 5px 0px;
+}
+
+
+
+.taskList{
+    height: 7rem;
+    border: rgb(190, 190, 190) solid 1px;
+    padding: 3px;
+    overflow: auto;
+    margin-bottom: 0.5rem;
+
+    &>.task{
+        padding-left: 3px;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(247, 242, 242);
+        }
+    }
+}
+
+
+
+.tasks_action{
+    text-align: center;
+    width:6rem;
+    height:2rem;
+   
+    color:#fff;
+   
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    
+    &.new{
+        background-color: #33bdef;
+        &:hover{
+            background-color: #019ad2;
+        }
+        &:disabled{
+            background-color: #6fd1f5;
+        }
+    }
+    &.edit{
+        background-color: #768d87;
+        &:hover{
+            background-color: #6c7c7c;
+        }
+        &:disabled{
+            background-color: #93a7a1;
+        }
+    }
+    &.complete{
+        background-color: #77b55a;
+        &:hover{
+            background-color: #60a53e;
+        }
+        &:disabled{
+            background-color: #88b871;
+        }
+    }
+    &.delete{
+        background-color: #e4685d;
+        &:hover{
+            background-color: #d8594f;
+        }
+        &:disabled{
+            background-color: #f0867c;
+        }
+    }
+    &.reopen{
+        background-color: #ffc477;
+        &:hover{
+            background-color: #fb9e25;
+        }
+        &:disabled{
+            background-color: #fdcd8f;
+        }
+    }
+
+    &:disabled{
+        cursor: not-allowed;
+    }
+}
+
+
+.assigmentlist{
+
+    height: 7rem;
+    border: rgb(190, 190, 190) solid 1px;
+    padding: 3px;
+    overflow: auto;
+    margin: 0.5rem 0rem;
+
+    &>.assigment{
+        padding-left: 3px;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(247, 242, 242);
+        }
+    }
+}
+
+.taskDetails_summary{
+    display: grid;
+
+    &>.row{
+        
+        padding-bottom: 5px;
+    }
+}
+
+.taskDetails_summary_title{
+    // font-size: 0.8rem;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    // color: #7A8997;
+    font-weight: 300;
+    
+}
+
+.taskDetails_summary_deadlineSection{
+display: flex;
+
+align-items: center;
+
+padding-right: 2rem;
+
+}
+
+.taskDetails_summary_label{
+    
+    
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    
+     
+}
+.taskDetails_summary_labelDate{
+    font-weight: 300;
+    // font-size: 0.8rem;
+}
+
+.taskDetails_assigments_action{
+
+    text-align: center;
+    width:6rem;
+    height:2rem;
+   
+    color:#fff;
+   
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+
+    background-color:#33bdef;
+
+        cursor: pointer;
+        &:hover{
+            background-color: #019ad2;
+        }
+        &:disabled{
+            background-color: #6fd1f5;
+            cursor: not-allowed;
+        }
+    
+}
+
+.taskDetails_assigments_details{
+    padding-bottom: 1.5rem;
+}
+
+.datepicker_section{
+    display:flex;
+    align-items: center;
+    padding-left: 5px;
+    margin: 1rem 0;
+
+    & .datepicker_label{
+        margin-right: 1rem;
+    }
+}
+
+.datepicker_input{
+    border: #019ad2 solid thin;
+    cursor: pointer;
+}
+
+.assigneeSection{
+    padding-left: 5px;
+    
+}
