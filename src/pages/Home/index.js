@@ -132,10 +132,6 @@ const Home = () => {
   );
 };
 
-const test = () => {
-  console.log("test");
-};
-
 const today = () => {
   let today = new Date().toISOString().slice(0, 10);
   return today;
