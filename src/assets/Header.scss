@@ -1,0 +1,52 @@
+@import "vars"; 
+
+.header-container{
+    display:flex;
+    justify-content: space-between;
+    padding: 1rem;
+    height: $top-panel-size;
+    border-bottom: 1px solid #D3D3D3 ;
+}
+
+.leftContainer{
+    display: flex;
+    align-items: center;
+}
+
+.header__logo{
+    width: 100px;
+    border: #747474 solid 1px;
+    padding: 0.7rem;
+}
+
+.leftContainer__sections{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 1rem;
+
+    
+
+    .tabTitle{
+        padding: 1rem;
+        color:#747474;        
+    }
+    .tabTitle:hover{
+        color:black;
+        cursor: pointer;
+        // border-bottom: 2px solid #009FF3;
+        // border-radius: 1px;
+    }
+}
+
+.rightContainer{
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.rightContainer > div {
+    padding: 0.5rem;
+
+}

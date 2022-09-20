@@ -1,0 +1,40 @@
+@import "vars"; 
+
+.mainView{
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    background-color: #F4F4F4;
+    height: calc(100vh - $top-panel-size);
+}
+
+.sideBar{
+    
+    border-right: 1px solid #D3D3D3;
+    padding: 1rem 0.5rem;
+}
+
+.sideBar_Section{
+    padding-bottom: 1.5rem;
+}
+
+.sideBar_Section__title{
+    font-size: 12px;
+    padding: 0.4rem;
+    text-transform: uppercase;
+    font-weight:300;
+    color: #6E6E73;
+}
+
+.sideBar_Section__project{
+    font-size: 14px;
+    width: 100%;    
+    cursor:pointer;
+    padding: 0.4rem;
+    border-radius: 3px;
+   
+}
+
+.sideBar_Section__project:hover,.sideBar_Section__project:active{
+background-color: #EAEAEA;
+
+}
