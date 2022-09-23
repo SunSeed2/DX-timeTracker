@@ -11,7 +11,7 @@ const projectList = [
   },
   {
     id: 3,
-    Name: "Adobe Target League",
+    Name: "Adobe Target",
     Status: 1,
   },
 ];

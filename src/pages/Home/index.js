@@ -4,20 +4,20 @@ const Home = () => {
   return (
     <section>
       <div className="tasksDefaultLayout">
-        <div className="firstcolumn">
+        <div className="card">
           <section className="currentTasks">
             <div className="sectionLabel">
               <span>Active tasks</span>
             </div>
             <ul className="currentTasks_taskList taskList">
-              <li className="currentTasks_taskList__task task">Task 1</li>
+              <li className="currentTasks_taskList__task task active">
+                Task 1
+              </li>
               <li className="currentTasks_taskList__task task">Task 2</li>
               <li className="currentTasks_taskList__task task">Task 3</li>
             </ul>
             <div className="currentTasks_actions">
-              <button onClick={test()} className="tasks_action new">
-                New
-              </button>
+              <button className="tasks_action new">New</button>
               <button disabled className="tasks_action edit">
                 Edit
               </button>
@@ -39,13 +39,16 @@ const Home = () => {
               <li className="task">Task 6</li>
             </ul>
             <div className="finishedTasks_actions">
-              <button disabled className="tasks_action reopen">
+              <button id="reopen" className="tasks_action reopen">
                 Reopen
               </button>
             </div>
           </section>
+          <dialog id="qwe">
+            <div>wer</div>
+          </dialog>
         </div>
-        <div className="secondcolumn">
+        <div className="card">
           <section className="taskDetails">
             <div className="taskDetails_summary">
               <div className="row">
@@ -101,7 +104,7 @@ const Home = () => {
             </div>
           </section>
         </div>
-        <div className="thirdcolumn">
+        <div className="card">
           <div className="sectionLabel">
             <span>Assigment</span>
           </div>
@@ -127,10 +130,22 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <div className="card"></div>
+        <div className="card"></div>
+        <div className="card"></div>
+        <div className="card"></div>
+        <div className="card"></div>
+        <div className="card"></div>
+        <div className="card"></div>
       </div>
     </section>
   );
 };
+/*
+const qwe = document.getElementById("qwe");
+const asd = document.getElementById("reopen");
+
+asd.addEventListener("click", qwe.showModal());*/
 
 const today = () => {
   let today = new Date().toISOString().slice(0, 10);
